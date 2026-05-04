@@ -1,8 +1,11 @@
-function App() {
-  return 
-  <main className="min-h-full flex items-center justify-center">
+import { Header } from "./components/Header/header";
 
-  </main>;
+function App() {
+  return (
+    <main className="min-h-full flex items-center justify-center">
+      <Header />
+    </main>
+  );
 }
 
 export default App;
