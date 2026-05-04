@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #35ab2a;
+  --color-primary-dark: #26801d;
+  --color-secondary: #ffffff;
+  --color-text-base: #595959;
+
+  --font-sans: "Poppins", sans-serif;
+}
+
+@layer base {
+}
+
+@layer components {
+  .logo {
+    @apply text-base md:text-[22px] leading-tight font-bold font-sans;
+  }
+  .links {
+    @apply text-base md:text-lg leading-normal font-medium font-sans;
+  }
+  .box-button {
+    @apply border-2 text-text-base focus:bg-primary-dark;
+  }
+}
