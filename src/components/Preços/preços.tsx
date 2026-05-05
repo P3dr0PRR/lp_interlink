@@ -1,3 +1,7 @@
+import licenciamentoMensal from "../../assets/licenciamentoMensal.png";
+import cobranca from "../../assets/cobrancaUnica.jpg";
+import helpdesk from "../../assets/helpdesk.avif";
+
 export function Preços() {
   return (
     <section
@@ -9,7 +13,14 @@ export function Preços() {
         <h2 className="">Flexibilidade para seu cartório</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           <div className="">
-            <div className="border p-2 rounded-sm shadow-md">
+            <div className="border h-190 p-2 rounded-sm shadow-md">
+              <div className="w-full h-48 flex items-center justify-center overflow-hidden mb-3">
+                <img
+                  src={licenciamentoMensal}
+                  alt="Licenciamento Mensal"
+                  className="rounded-full h-24 w-24 object-cover"
+                />
+              </div>
               <h3 className="">Licenciamento Mensal</h3>
               <p className="">Ideal para cartórios ativos</p>
               <div className="my-3 space-y-3">
@@ -32,7 +43,14 @@ export function Preços() {
           </div>
 
           <div className="">
-            <div className="border p-2 rounded-sm shadow-md">
+            <div className="border h-190 p-2 rounded-sm shadow-md">
+              <div className="w-full h-48 flex items-center justify-center overflow-hidden mb-3">
+                <img
+                  src={cobranca}
+                  alt="Cobrança única"
+                  className="rounded-full h-24 w-24 object-cover"
+                />
+              </div>
               <h3 className="">Cobrança única</h3>
               <p className="">Flexível e sem compromisso</p>
               <div className="my-3 space-y-3">
@@ -54,7 +72,14 @@ export function Preços() {
           </div>
 
           <div className="">
-            <div className="border p-2 rounded-sm shadow-md">
+            <div className="border h-190 p-2 rounded-sm shadow-md">
+              <div className="w-full h-48 flex items-center justify-center overflow-hidden mb-3">
+                <img
+                  src={helpdesk}
+                  alt="Suporte técnico adicional"
+                  className="rounded-full h-24 w-24 object-cover"
+                />
+              </div>
               <h3 className="">Suporte técnico adicional</h3>
               <p className="">Apoio especializado quando precisar</p>
               <div className="my-3 space-y-3">
