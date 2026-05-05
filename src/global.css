@@ -6,25 +6,29 @@
   --color-secondary: #ffffff;
   --color-text-base: #595959;
   --color-bg-secondary: #26801d;
+  --color-bg-servicos: #eef1ef;
 
   --font-sans: "Poppins", sans-serif;
 }
 
 @layer base {
   h1 {
-    @apply text-[30px] md:text-[56px] lg:text-[58px] leading-[125%];
+    @apply text-[30px] md:text-[56px] lg:text-[58px] leading-[125%]  font-bold;
+  }
+  h2 {
+    @apply text-[22px] md:text-[32px] leading-[120%]  font-semibold;
   }
   h3 {
-    @apply text-[20px] md:text-[30px] leading-[120%];
+    @apply text-[20px] md:text-[30px] leading-[120%]  font-semibold;
   }
 }
 
 @layer components {
   .logo {
-    @apply text-[26px] text-text-base leading-tight font-bold font-sans;
+    @apply text-[26px] text-text-base leading-tight font-bold;
   }
   .links {
-    @apply text-base hover:text-primary-dark md:text-lg block leading-normal font-medium font-sans;
+    @apply text-base hover:text-primary-dark md:text-lg block leading-normal font-medium;
   }
   .contact-button {
     @apply border-2 text-text-base py-1.5 px-5 hover:bg-primary-dark hover:text-secondary;
@@ -32,4 +36,19 @@
   .box-button {
     @apply text-2xl text-secondary bg-primary-dark py-1.5 px-5 m-2 rounded-sm hover:bg-bg-secondary;
   }
+  .corpo {
+    @apply p-[40px];
+  }
+  .conteudo {
+    @apply py-13 w-full;
+  }
+  .card {
+    @apply flex flex-col bg-secondary pb-5 rounded-lg shadow-md;
+  }
+  .card-desc {
+    @apply p-5;
+  }
+}
+html {
+  scroll-behavior: smooth;
 }

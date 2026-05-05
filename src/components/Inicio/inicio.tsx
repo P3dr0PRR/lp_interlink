@@ -2,7 +2,7 @@ import inicio from "../../assets/inicio.png";
 
 export function Inicio() {
   return (
-    <section className="w-full flex items-center justify-center">
+    <section id="inicio" className="w-full flex items-center justify-center">
       <div className="bg-lime-500 relative">
         <img
           src={inicio}

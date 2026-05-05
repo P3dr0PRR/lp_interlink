@@ -16,12 +16,23 @@ export function Header() {
           >
             <img src={menu} alt="Menu" className="w-6 h-6" />
           </button>
-          <div className="hidden md:flex w-full items-center justify-end gap-8">
-            <a className="links">Início</a>
-            <a className="links">Sobre</a>
-            <a className="links">Serviços</a>
-            <a className="links">Preços</a>
-          </div>
+          <nav className="hidden md:flex w-full items-center justify-end gap-8">
+            <a className="links" href="#inicio">
+              Início
+            </a>
+            <a className="links" href="#sobre">
+              Sobre
+            </a>
+            <a className="links" href="#servicos">
+              Serviços
+            </a>
+            <a className="links" href="#precos">
+              Preços
+            </a>
+            <a className="contact-button" href="#contato">
+              Contato
+            </a>
+          </nav>
         </div>
       )}
 
@@ -32,12 +43,12 @@ export function Header() {
               <img src={close} alt="Close" className="w-6 h-6" />
             </button>
           </div>
-          <div className="w-full px-11 space-y-3">
+          <nav className="w-full px-11 space-y-3">
             <ul className="flex flex-col w-full space-y-3">
               <li className="w-full">
                 <a
                   className="links py-1 border-text-base border-b w-full"
-                  href=""
+                  href="#inicio"
                 >
                   Início
                 </a>
@@ -45,7 +56,7 @@ export function Header() {
               <li>
                 <a
                   className="links py-1 border-text-base border-b w-full"
-                  href=""
+                  href="#sobre"
                 >
                   Sobre
                 </a>
@@ -53,23 +64,23 @@ export function Header() {
               <li className="w-full">
                 <a
                   className="links py-1 border-text-base border-b w-full"
-                  href=""
+                  href="#servicos"
                 >
                   Serviços
                 </a>
               </li>
               <li>
-                <a className="links py-1 border-text-base" href="">
+                <a className="links py-1 border-text-base" href="#precos">
                   Preços
                 </a>
               </li>
             </ul>
             <div className="flex text-center w-full">
-              <a className="contact-button w-full" href="">
+              <a className="contact-button w-full" href="#contato">
                 Contato
               </a>
             </div>
-          </div>
+          </nav>
         </div>
       )}
     </header>
