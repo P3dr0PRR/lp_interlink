@@ -12,8 +12,8 @@ export function Preços() {
         <p className="text-primary-dark">Planos acessíveis</p>
         <h2 className="">Flexibilidade para seu cartório</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-          <div className="">
-            <div className="border h-190 p-2 rounded-sm shadow-md">
+          <div className="h-full">
+            <div className="border  p-2 rounded-sm shadow-md h-full">
               <div className="w-full h-48 flex items-center justify-center overflow-hidden mb-3">
                 <img
                   src={licenciamentoMensal}
@@ -42,8 +42,8 @@ export function Preços() {
             </div>
           </div>
 
-          <div className="">
-            <div className="border h-190 p-2 rounded-sm shadow-md">
+          <div className="h-full">
+            <div className="border  p-2 rounded-sm shadow-md h-full">
               <div className="w-full h-48 flex items-center justify-center overflow-hidden mb-3">
                 <img
                   src={cobranca}
@@ -71,8 +71,8 @@ export function Preços() {
             </div>
           </div>
 
-          <div className="">
-            <div className="border h-190 p-2 rounded-sm shadow-md">
+          <div className="h-full">
+            <div className="border p-2 rounded-sm shadow-md h-full">
               <div className="w-full h-48 flex items-center justify-center overflow-hidden mb-3">
                 <img
                   src={helpdesk}
