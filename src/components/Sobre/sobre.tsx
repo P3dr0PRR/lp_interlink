@@ -2,7 +2,10 @@ import sobre from "../../assets/Sobre.png";
 
 export function Sobre() {
   return (
-    <section id="sobre" className="w-full h-screen flex items-center justify-center corpo">
+    <section
+      id="sobre"
+      className="w-full min-h-screen flex flex-col md:flex-row items-center justify-center corpo"
+    >
       <div className="conteudo space-y-3">
         <p className="text-primary-dark">Soluções para cartórios</p>
         <h2 className="">Sistemas eficientes para protestos</h2>
@@ -20,7 +23,7 @@ export function Sobre() {
           Entre em contato
         </a>
       </div>
-      <div className="w-1/2 h-full flex items-center justify-center p-4">
+      <div className="w-full md:w-1/2 h-full flex items-center justify-center p-4">
         <img
           src={sobre}
           alt="Sobre a Interlink"
