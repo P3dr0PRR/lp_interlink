@@ -6,7 +6,7 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white flex items-center justify-center p-[20px]">
+    <header className="w-full bg-white flex items-center justify-center p-[20px] fixed z-10">
       {!isMenuOpen && (
         <div className="flex justify-between w-full px-[20px]">
           <a className="logo">Interlink</a>
@@ -65,7 +65,7 @@ export function Header() {
               </li>
             </ul>
             <div className="flex text-center w-full">
-              <a className="box-button w-full" href="">
+              <a className="contact-button w-full" href="">
                 Contato
               </a>
             </div>

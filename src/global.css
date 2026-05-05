@@ -2,14 +2,21 @@
 
 @theme {
   --color-primary: #35ab2a;
-  --color-primary-dark: #26801d;
+  --color-primary-dark: #32aa27;
   --color-secondary: #ffffff;
   --color-text-base: #595959;
+  --color-bg-secondary: #26801d;
 
   --font-sans: "Poppins", sans-serif;
 }
 
 @layer base {
+  h1 {
+    @apply text-[30px] md:text-[56px] lg:text-[58px] leading-[125%];
+  }
+  h3 {
+    @apply text-[20px] md:text-[30px] leading-[120%];
+  }
 }
 
 @layer components {
@@ -19,7 +26,10 @@
   .links {
     @apply text-base hover:text-primary-dark md:text-lg block leading-normal font-medium font-sans;
   }
-  .box-button {
+  .contact-button {
     @apply border-2 text-text-base py-1.5 px-5 hover:bg-primary-dark hover:text-secondary;
+  }
+  .box-button {
+    @apply text-2xl text-secondary bg-primary-dark py-1.5 px-5 m-2 rounded-sm hover:bg-bg-secondary;
   }
 }
